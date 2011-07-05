@@ -1,0 +1,11 @@
+Ronto is a random topic generator. It randomly generates a list of ideas that 
+can be used as the premises for furthur research. Ideally, it would be useful in
+a situation where a new thesis topic is required, either for a masters or a 
+doctorate program.
+
+        * The 'bin' folder contains the source of the program and the 'data' 
+          folder contains the data files used by the program.
+
+        * Usage.
+                ran_top.py <data file to use> <number of topics>
+		eg: ran_top.py manlist 5
