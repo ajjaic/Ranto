@@ -3,22 +3,121 @@
 import random
 import sys
 
-def topics(f):
-	f = open(f, 'r')
-	wordlist = []
-
-	for i in f:
-		wordlist.append(i.strip())
-	return wordlist
+tech = [ "kinect",
+         "home",
+         "control",
+         "website",
+         "house hold appliance",
+         "TUIO",
+         "openCV",
+         "openGL",
+         "game",
+         "MMORPG",
+         "virtual reality",
+         "augmented reality",
+         "3d glasses",
+         "android",
+         "mobile phone",
+         "grenade",
+         "laser show",
+         "forum",
+         "device control",
+         "mouse",
+         "simulator",
+         "robot",
+         "holography",
+         "hologram",
+         "internet",
+         "python",
+         "time lapse",
+         "music",
+         "virtual",
+         "web",
+         "vision",
+         "motion",
+         "mobile",
+         "track",
+         "HMD",
+         "glasses",
+         "art",
+         "painting",
+         "sculpture",
+         "touch screen",
+         "gallery",
+         "audio",
+         "sound",
+         "alarm",
+         "encryption",
+         "biometry",
+         "fingerprints",
+         "quake",
+         "digital",
+         "analog",
+         "cloud",
+         "plane",
+         "depth",
+         "robotics",
+         "library",
+         "teleop",
+         "porn",
+         "fight",
+         "shadow",
+         "effects",
+         "particle",
+         "genetic",
+         "nanotechnology",
+         "recognition",
+         "draw",
+         "physics",
+         "scanning",
+         "manipulation",
+         "gravity",
+         "multitouch",
+         "geo",
+         "mapping",
+         "surface",
+         "blackboard",
+         "space",
+         "builder",
+         "animation",
+         "image",
+         "map",
+         "military",
+         "gun",
+         "transparent",
+         "invisible",
+         "dreams",
+         "inception",
+         "printing",
+         "linux",
+         "prototype",
+         "programming",
+         "algorithms",
+         "ID",
+         "mail",
+         "money",
+         "email",
+         "democracy",
+         "detection",
+         "corruption",
+         "ball",
+         "circular",
+         "solar power",
+         "wikileaks",
+         "RFID",
+         "irobot",
+         "swarm",
+         "intelligence",
+         "projector",
+         "evolutionary hardware"]
 
 def mainp():
-	wordlist = topics('../data/' + sys.argv[1])
-	
-	while True:
-		print random.sample(wordlist, int(sys.argv[2]))
-		if raw_input() == '':
-			continue
-		else:
-			break	
+    while True:
+        print random.sample(tech, int(sys.argv[1]))
+        if raw_input() == '':
+                continue
+        else:
+                break
 
 mainp()
+
